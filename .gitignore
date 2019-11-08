@@ -1,2 +1,3 @@
 *.csv
 /venv1
+.idea
