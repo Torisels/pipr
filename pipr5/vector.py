@@ -63,7 +63,6 @@ class Vector:
 
     def angle_between_vectors(self, vector):
         cosine = self.dot_product(vector) / (self.length * vector.length)
-        print(cosine)
         return math.degrees(math.acos(cosine))
 
     @staticmethod
@@ -77,7 +76,3 @@ class Vector:
         return vector.rotate(angle)
 
 
-a = Vector(2, 2)
-b = Vector(2, 5)
-c = a + b
-print(type(c))
