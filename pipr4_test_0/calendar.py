@@ -15,15 +15,13 @@ class Calendar:
         for day in range(1, length + 1):
             output_string.append(f"{day:02} ")
             if self.first_day_index == 6:
-                output_string.append("\n")
                 self.week += 1
-                if day != length:
-                    output_string.append(f"{self.week:02}  ")
                 self.first_day_index = 0
+                if day != length:
+                    output_string.append("\n")
+                    output_string.append(f"{self.week:02}{' '*2}")
             else:
                 self.first_day_index += 1
-        if output_string[-1] == "\n":
-            output_string.pop()
 
         return "".join(output_string)
 
