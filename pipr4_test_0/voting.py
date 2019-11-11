@@ -1,4 +1,4 @@
-from pipr4_test_0.party import Party
+
 from collections import Counter
 
 
